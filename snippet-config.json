@@ -1,0 +1,18 @@
+{
+  "snippet_list": [
+    {
+      "folder": "bash",
+      "date": "2024-11-03T17:43:26.448141+08:00",
+      "title": "cat",
+      "file": "cat.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-03T17:43:26.448141+08:00",
+      "title": "ls",
+      "file": "ls.md",
+      "language": "md"
+    }
+  ]
+}
