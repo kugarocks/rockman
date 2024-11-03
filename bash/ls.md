@@ -1,4 +1,4 @@
-# Introduction
+# Intro
 
 list directory contents
 
