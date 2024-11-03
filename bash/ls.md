@@ -21,7 +21,7 @@ ls -lh
 ## Only Directories
 
 ```bash
-ls -d */
+ls -ld */
 ```
 
 Include hidden directories
