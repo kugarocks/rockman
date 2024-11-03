@@ -1,4 +1,4 @@
-# CAT Manual
+# Introduction
 
 Concatenate files and print on the standard output
 

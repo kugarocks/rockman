@@ -1,4 +1,4 @@
-# LS MANUAL
+# Introduction
 
 list directory contents
 
