@@ -1,4 +1,4 @@
-# ls
+# LS MANUAL
 
 list directory contents
 

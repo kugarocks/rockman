@@ -1,4 +1,4 @@
-# cat
+# CAT Manual
 
 Concatenate files and print on the standard output
 
