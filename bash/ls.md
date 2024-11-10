@@ -1,6 +1,6 @@
 # Intro
 
-list directory contents
+List directory contents.
 
 ```bash
 ls
@@ -10,7 +10,7 @@ ls
 
 ## Long Format
 
-with Human Readable Size
+With Human Readable Size.
 
 ```bash
 ls -lh
@@ -24,7 +24,7 @@ ls -lh
 ls -ld */
 ```
 
-Include hidden directories
+Include hidden directories.
 
 ```bash
 ls -ld .*/ */
@@ -36,4 +36,12 @@ ls -ld .*/ */
 
 ```bash
 ls -ld /usr
+```
+
+---
+
+## Show Inode Number
+
+```bash
+ls -i foo.txt
 ```
