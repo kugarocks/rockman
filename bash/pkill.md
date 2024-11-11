@@ -10,11 +10,11 @@ Signal for processes based on name and other attributes.
 
 ## Specify Signal Type
 
-```bash
+```bash {copyable}
 pkill -SIGKILL bash
 ```
 
-```bash
+```bash {copyable}
 pkill -9 bash
 ```
 
@@ -22,11 +22,11 @@ pkill -9 bash
 
 ## Specify User Processes
 
-```bash
+```bash {copyable}
 pkill -u kuga
 ```
 
-```bash
+```bash {copyable}
 pkill -9 -u kuga bash
 ```
 
@@ -34,6 +34,6 @@ pkill -9 -u kuga bash
 
 ## Precision Process Name
 
-```bash
+```bash {copyable}
 pkill -x sshd
 ```

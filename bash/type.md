@@ -2,7 +2,7 @@
 
 Determine if a command is built-in, external, or a function
 
-```bash
+```bash {copyable}
 type [options] command
 ```
 
@@ -10,27 +10,31 @@ type [options] command
 
 ## Examples
 
-```bash
+```bash {copyable}
 type cd
 ```
 
-`cd` is a shell builtin.
+```txt {title="Output"}
+cd is a shell builtin.
+```
 
-```bash
+```bash {copyable}
 type useradd
 ```
 
-`useradd` is `/usr/sbin/useradd`.
+```txt {title="Output"}
+useradd is /usr/sbin/useradd.
+```
 
 ---
 
 ## Show All Implementations
 
-```bash
+```bash {copyable}
 type -a echo
 ```
 
-```txt
+```txt {title="Output"}
 echo is a shell builtin
 echo is /usr/bin/echo
 echo is /bin/echo

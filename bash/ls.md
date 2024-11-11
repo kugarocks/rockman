@@ -2,7 +2,7 @@
 
 List directory contents.
 
-```bash
+```bash {copyable}
 ls
 ```
 
@@ -12,7 +12,7 @@ ls
 
 With Human Readable Size.
 
-```bash
+```bash {copyable}
 ls -lh
 ```
 
@@ -20,13 +20,13 @@ ls -lh
 
 ## Only Directories
 
-```bash
+```bash {copyable}
 ls -ld */
 ```
 
 Include hidden directories.
 
-```bash
+```bash {copyable}
 ls -ld .*/ */
 ```
 
@@ -34,7 +34,7 @@ ls -ld .*/ */
 
 ## Specific Directory
 
-```bash
+```bash {copyable}
 ls -ld /usr
 ```
 
@@ -42,6 +42,6 @@ ls -ld /usr
 
 ## Show Inode Number
 
-```bash
+```bash {copyable}
 ls -i foo.txt
 ```

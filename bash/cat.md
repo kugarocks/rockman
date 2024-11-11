@@ -2,7 +2,7 @@
 
 Concatenate files and print on the standard output.
 
-```bash
+```bash {copyable}
 cat foo.txt
 ```
 
@@ -10,13 +10,13 @@ cat foo.txt
 
 ## Show Line Numbers
 
-```bash
+```bash {copyable}
 cat -n foo.txt
 ```
 
 Without blank lines:
 
-```bash
+```bash {copyable}
 cat -b foo.txt
 ```
 
@@ -24,7 +24,7 @@ cat -b foo.txt
 
 ## Display All Characters
 
-```bash
+```bash {copyable}
 cat -A foo.txt
 ```
 
@@ -40,7 +40,7 @@ cat -A foo.txt
 
 Without quotes, $HOME will be expanded.
 
-```bash
+```bash {copyable}
 cat <<EOF > foo.txt
 line1
 $HOME
@@ -49,7 +49,7 @@ EOF
 
 With quotes(single or double), $HOME will not be expanded.
 
-```bash
+```bash {copyable}
 cat <<'EOF' > foo.txt
 line1
 $HOME

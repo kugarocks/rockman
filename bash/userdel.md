@@ -8,7 +8,7 @@ Delete a user account and related files.
 
 Delete user and keep the home directory.
 
-```bash
+```bash {copyable}
 userdel user
 ```
 
@@ -18,6 +18,6 @@ userdel user
 
 Delete user, home-directory, and mail.
 
-```bash
+```bash {copyable}
 userdel -r user
 ```

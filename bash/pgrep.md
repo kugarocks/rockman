@@ -6,7 +6,7 @@ Look up for processes based on name and other attributes.
 
 ## Ignore Case
 
-```bash
+```bash {copyable}
 pgrep -i BASH
 ```
 
@@ -14,7 +14,7 @@ pgrep -i BASH
 
 ## Specify User Processes
 
-```bash
+```bash {copyable}
 pgrep -u kuga
 ```
 
@@ -24,11 +24,11 @@ pgrep -u kuga
 
 It will display the process ID and name.
 
-```bash
+```bash {copyable}
 pgrep -l bash
 ```
 
-```bash
+```bash {title="Output"}
 42977 bash
 44150 bash
 ```
@@ -37,7 +37,7 @@ pgrep -l bash
 
 ## Number of Matching Processes
 
-```bash
+```bash {copyable}
 pgrep -c bash
 ```
 
@@ -47,11 +47,11 @@ pgrep -c bash
 
 Get the child processes of the specified parent PID.
 
-```bash
+```bash {copyable}
 pgrep -P 1729
 ```
 
-```bash
+```bash {title="Output"}
 42912
 44084
 ```
@@ -60,11 +60,11 @@ pgrep -P 1729
 
 ## Recently Started Processes
 
-```bash
+```bash {copyable}
 pgrep -n -l
 ```
 
-```bash
+```bash {copyable}
 pgrep -n bash -l
 ```
 
@@ -72,11 +72,11 @@ pgrep -n bash -l
 
 ## Earliest Started Processes
 
-```bash
+```bash {copyable}
 pgrep -o -l
 ```
 
-```bash
+```bash {title="Output"}
 1 systemd
 ```
 
@@ -84,6 +84,6 @@ pgrep -o -l
 
 ## Precision Process Name
 
-```bash
+```bash {copyable}
 pgrep -x sshd
 ```

@@ -2,7 +2,7 @@
 
 Run a program in a modified environment.
 
-```bash
+```bash {copyable}
 env
 ```
 

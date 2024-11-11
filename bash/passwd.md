@@ -8,7 +8,7 @@ Change user password.
 
 Without parameters, it is to change the password of the current user.
 
-```bash
+```bash {copyable}
 passwd
 ```
 
@@ -16,7 +16,7 @@ passwd
 
 ## Modify User PWD
 
-```bash
+```bash {copyable}
 passwd kuga
 ```
 
@@ -26,13 +26,13 @@ passwd kuga
 
 It will not disable SSH Authentication.
 
-```bash
+```bash {copyable}
 passwd -l kuga
 ```
 
 The pwd field in the `/etc/shadow` file will be prefixed with `!`.
 
-```bash
+```bash {copyable}
 grep kuga /etc/shadow
 ```
 
@@ -40,6 +40,6 @@ grep kuga /etc/shadow
 
 ## Enable PWD Login
 
-```bash
+```bash {copyable}
 passwd -u kuga
 ```

@@ -6,7 +6,7 @@ User group file is `/etc/group`.
 
 ## Display User Group
 
-```bash
+```bash {copyable}
 id kuga
 ```
 
@@ -18,7 +18,7 @@ uid=1000(kuga) gid=1000(kuga) groups=1000(kuga)
 
 ## New Group
 
-```bash
+```bash {copyable}
 groupadd name
 ```
 
@@ -26,7 +26,7 @@ groupadd name
 
 ## Modify Group Name
 
-```bash
+```bash {copyable}
 groupmod -n newname name
 ```
 
@@ -36,13 +36,13 @@ groupmod -n newname name
 
 Append the group to the user.
 
-```bash
+```bash {copyable}
 usermod -aG groupname user
 ```
 
 Overwrite the user's group.
 
-```bash
+```bash {copyable}
 usermod -G groupname user
 ```
 
@@ -50,7 +50,7 @@ usermod -G groupname user
 
 ## Delete User Group
 
-```bash
+```bash {copyable}
 gpasswd -d user groupname
 ```
 
@@ -58,6 +58,6 @@ gpasswd -d user groupname
 
 ## Delete Group
 
-```bash
+```bash {copyable}
 groupdel name
 ```

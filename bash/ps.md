@@ -2,7 +2,7 @@
 
 Report a snapshot of the current processes.
 
-```bash
+```bash {copyable}
 ps
 ```
 
@@ -12,14 +12,14 @@ Shows all processes for the current terminal by default.
 
 ## List All Processes
 
-```bash
+```bash {copyable}
 ps -ef
 ```
 
 * `-e`: Show all processes.
 * `-f`: Show full format.
 
-```bash
+```bash {copyable}
 ps aux
 ```
 
@@ -31,6 +31,6 @@ ps aux
 
 ## List User Processes
 
-```bash
+```bash {copyable}
 ps -fu kuga
 ```

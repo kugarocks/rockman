@@ -6,7 +6,7 @@ Modify a user account.
 
 ## Modify User ID
 
-```bash
+```bash {copyable}
 usermod -u 1001 kuga
 ```
 
@@ -14,7 +14,7 @@ usermod -u 1001 kuga
 
 ## Modify User Name
 
-```bash
+```bash {copyable}
 usermod -l new old
 ```
 
@@ -24,7 +24,7 @@ usermod -l new old
 
 `usermod` does not check if the shell exists, use `chsh` instead.
 
-```bash
+```bash {copyable}
 chsh -s /bin/bash kuga
 ```
 
@@ -34,7 +34,7 @@ chsh -s /bin/bash kuga
 
 Grant user `kuga` to group `sudo`.
 
-```bash
+```bash {copyable}
 usermod -aG sudo kuga
 ```
 
@@ -46,7 +46,7 @@ usermod -aG sudo kuga
 
 Set user `kuga`'s shell to `/sbin/nologin`.
 
-```bash
+```bash {copyable}
 usermod -s /sbin/nologin kuga
 ```
 
@@ -62,7 +62,7 @@ It will disable all authentication methods.
 
 ## Enable Login Shell
 
-```bash
+```bash {copyable}
 usermod -s /bin/bash kuga
 ```
 
@@ -70,13 +70,13 @@ usermod -s /bin/bash kuga
 
 ## Disable PWD Login
 
-```bash
+```bash {copyable}
 usermod -L kuga
 ```
 
 The pwd field in the `/etc/shadow` file will be prefixed with `!`.
 
-```bash
+```bash {copyable}
 grep kuga /etc/shadow
 ```
 
@@ -84,6 +84,6 @@ grep kuga /etc/shadow
 
 ## Enable PWD Login
 
-```bash
+```bash {copyable}
 usermod -U kuga
 ```

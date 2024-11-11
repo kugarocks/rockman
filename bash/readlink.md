@@ -2,7 +2,7 @@
 
 Print resolved symbolic links or canonical file names.
 
-```bash
+```bash {copyable}
 readlink /bin
 ```
 
@@ -12,7 +12,7 @@ readlink /bin
 
 ## Final Link
 
-```bash
+```bash {copyable}
 readlink -f /bin/vim
 ```
 

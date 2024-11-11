@@ -2,7 +2,7 @@
 
 Estimate file space usage.
 
-```bash
+```bash {copyable}
 du
 ```
 
@@ -10,7 +10,7 @@ du
 
 ## Directory Size
 
-```bash
+```bash {copyable}
 du -sh ~/Downloads
 ```
 
@@ -20,16 +20,16 @@ du -sh ~/Downloads
 
 Including Subdirectories.
 
-```bash
+```bash {copyable}
 du -ah ~/Downloads/* | sort -rh | head -n 5
 ```
 
-```bash
+```bash {copyable}
 du -ah ~/Downloads --max-depth=1 | sort -rh | head -n 10
 ```
 
 Exclude Subdirectories.
 
-```bash
+```bash {copyable}
 du -sh ~/Downloads/* | sort -rh | head -n 5
 ```

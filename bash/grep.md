@@ -2,7 +2,7 @@
 
 Global Regular Expression Print.
 
-```bash
+```bash {copyable}
 grep
 ```
 
@@ -10,7 +10,7 @@ grep
 
 ## Reverse Matching
 
-```bash
+```bash {copyable}
 grep -v foo file
 ```
 
@@ -18,7 +18,7 @@ grep -v foo file
 
 ## Ignore Case
 
-```bash
+```bash {copyable}
 grep -i Foo file
 ```
 
@@ -26,7 +26,7 @@ grep -i Foo file
 
 ## Count Matching Lines
 
-```bash
+```bash {copyable}
 grep -c foo file
 ```
 
@@ -36,7 +36,7 @@ grep -c foo file
 
 Without regex.
 
-```bash
+```bash {copyable}
 grep -F foo file
 ```
 
@@ -44,7 +44,7 @@ grep -F foo file
 
 ## Recursive Dir Search
 
-```bash
+```bash {copyable}
 grep -r foo /path
 ```
 
@@ -52,7 +52,7 @@ grep -r foo /path
 
 ## Matching File Names
 
-```bash
+```bash {copyable}
 grep -l foo *.txt
 ```
 
@@ -60,7 +60,7 @@ grep -l foo *.txt
 
 ## Non-Matching File Names
 
-```bash
+```bash {copyable}
 grep -rL foo /path
 ```
 
@@ -70,7 +70,7 @@ grep -rL foo /path
 
 After:
 
-```bash
+```bash {copyable}
 grep -A 3 foo file
 ```
 
@@ -80,7 +80,7 @@ grep -A 3 foo file
 
 Before:
 
-```bash
+```bash {copyable}
 grep -B 3 foo file
 ```
 
@@ -88,7 +88,7 @@ grep -B 3 foo file
 
 ## With Context
 
-```bash
+```bash {copyable}
 grep -C 3 foo file
 ```
 
@@ -96,11 +96,11 @@ grep -C 3 foo file
 
 ## Match Multiple Words
 
-```bash
+```bash {copyable}
 grep -E 'foo|bar' file
 ```
 
-```bash
+```bash {copyable}
 grep -e 'foo' -e 'bar' file
 ```
 
@@ -108,7 +108,7 @@ grep -e 'foo' -e 'bar' file
 
 ## Exclude Files in Dir
 
-```bash
+```bash {copyable}
 grep foo --exclude="*.log" /path
 ```
 
@@ -116,6 +116,6 @@ grep foo --exclude="*.log" /path
 
 ## Match Files in Dir
 
-```bash
+```bash {copyable}
 grep foo --include="*.txt" /path
 ```

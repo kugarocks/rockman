@@ -2,7 +2,7 @@
 
 A Stream Text Processor, authored by Lee E. McMahon.
 
-```bash
+```bash {copyable}
 sed [OPTIONS] 'command' file
 ```
 
@@ -27,270 +27,316 @@ Omitting file enters interactive mode, executing one line at a time.
 
 ---
 
-### Replace First Occurrence
+## Replace First Occurrence
 
 Replace the first occurrence of 'a' with 'b'.
 
-```bash {frame="none"}
+```bash {copyable}
 echo 'aba' | sed 's/a/b/'
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 bba
 ```
 
-### Replace Nth Occurrence
+---
+
+## Replace Nth Occurrence
 
 Replace the Nth occurrence of 'a' with 'b'.
 
-```bash {frame="none"}
+```bash {copyable}
 echo 'aba' | sed 's/a/b/2'
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 abb
 ```
 
-### Replace All Occurrences
+---
 
-```bash {frame="none"}
+## Replace All Occurrences
+
+```bash {copyable}
 echo 'aba' | sed 's/a/b/g'
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 bbb
 ```
 
-### Execute Mult Commands
+---
+
+## Execute Mult Commands
 
 Can use `;` to separate, or use the `-e` option.
 
-```bash {frame="none"}
+```bash {copyable}
 echo 'aba' | sed 's/a/b/; s/a/c/'
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 echo 'aba' | sed -e 's/a/b/' -e 's/a/c/'
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 bbc
 ```
 
-### Using Command File
+---
+
+## Using Command File
 
 The `cmd.sed` file content is as follows.
 
-```bash {frame="none"}
+```bash {copyable}
 s/a/b/
 s/a/c/
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 echo 'aba' | sed -f cmd.sed
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 bbc
 ```
 
-### Print Only Replaced Lines
+---
+
+## Print Only Replaced Lines
 
 `-n` indicates suppressing output, `p` indicates only outputting matched lines.
 
-```bash {frame="none"}
+```bash {copyable}
 echo '
 aa bb
 cc dd
 ' | sed -n 's/aa/bb/p'
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 bb bb
 ```
 
-### Write Result to File
+---
 
-```bash {frame="none"}
+## Write Result to File
+
+```bash {copyable}
 echo '
 aa bb
 cc dd
 ' | sed 's/aa/bb/w out.txt'
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 cat out.txt
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 bb bb
 ```
 
-### Modify Delimiter
+---
+
+## Modify Delimiter
 
 Can use another symbol to replace the command delimiter `/`.
 
-```bash {frame="none"}
+```bash {copyable}
 echo '/bin/sh' | sed 's#/sh#/bash#'
 ```
 
-```bash {frame="none"}
+```bash {title="Output"}
 /bin/bash
 ```
 
-### Specify Line Match
+---
+
+## Specify Line Match
 
 Match the 2nd line.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2s/aa/bb/'
 ```
 
 Match lines 2-4.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2,4s/aa/bb/'
 ```
 
 Match lines 2 to the last.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2,$s/aa/bb/'
 ```
 
-### Specify Command Group
+---
 
-```bash {frame="none"}
+## Specify Command Group
+
+```bash {copyable}
 sed '2{s/cc/aa/; s/dd/bb/}'
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2,4{
 s/cc/aa/
 s/dd/bb/
 }'
 ```
 
-### Delete All Lines
+---
 
-```bash {frame="none"}
+## Delete All Lines
+
+```bash {copyable}
 sed 'd'
 ```
 
-### Delete Specific Lines
+---
 
-```bash {frame="none"}
+## Delete Specific Lines
+
+```bash {copyable}
 sed '1d'
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2,4d'
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2,$d'
 ```
 
-### Delete Matched Lines
+---
 
-```bash {frame="none"}
+## Delete Matched Lines
+
+```bash {copyable}
 sed '/aa bb/d'
 ```
 
-### Insert a Line Before
+---
 
-```bash {frame="none"}
+## Insert a Line Before
+
+```bash {copyable}
 echo "hello" | sed 'i\New Line'
 ```
 
-### Insert a Line After
+---
 
-```bash {frame="none"}
+## Insert a Line After
+
+```bash {copyable}
 echo "hello" | sed 'a\New Line'
 ```
 
-### Specify Line Insert
+---
 
-```bash {frame="none"}
+## Specify Line Insert
+
+```bash {copyable}
 sed '3i\New Line'
 ```
 
-### Matched Line Insert
+---
 
-```bash {frame="none"}
+## Matched Line Insert
+
+```bash {copyable}
 sed '/cc/i\New Line'
 ```
 
-### Insert Multiple Lines
+---
+
+## Insert Multiple Lines
 
 Must use `\`.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '2i\
 New Line 1\
 New Line 2
 '
 ```
 
-### Modify Line
+---
 
-```bash {frame="none"}
+## Modify Line
+
+```bash {copyable}
 sed '2c\
 Change Line 1\
 Change Line 2
 '
 ```
 
-```bash {frame="none"}
+```bash {copyable}
 sed '/aa/c\
 Change Line 1
 '
 ```
 
-### Single Char Replace
+---
 
-```bash {frame="none"}
+## Single Char Replace
+
+```bash {copyable}
 echo 'aabbcc' | sed 'y/ac/ca/'
 ```
 
-```txt {frame="none"}
+```txt {title="Output"}
 ccbbaa
 ```
 
-### Print Specific Lines
+---
 
-```bash {frame="none"}
+## Print Specific Lines
+
+```bash {copyable}
 sed -n '2,5p'
 ```
 
-### Print Before/After Replacement
+---
 
-```bash {frame="none"}
+## Print Before/After Replacement
+
+```bash {copyable}
 sed -n '/aa/{p; s/aa/cc/p}'
 ```
 
-### Print Line Number
+---
 
-```bash {frame="none"}
+## Print Line Number
+
+```bash {copyable}
 sed -n '/bb/{=; p}'
 ```
 
-### Reading from File
+---
+
+## Reading from File
 
 Create foo and bar files.
 
-```bash {frame="none"}
+```bash {copyable}
 echo -e 'aa\nbb' > foo
 echo -e '11\n22' > bar
 ```
 
 Read from the foo file and insert after the first line of bar.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '1r foo' bar
 ```
 
-```txt {frame="none"}
+```txt {title="Output"}
 11
 aa
 bb
@@ -299,11 +345,11 @@ bb
 
 Match string then insert.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '/22/r foo' bar
 ```
 
-```txt {frame="none"}
+```txt {title="Output"}
 11
 22
 aa
@@ -312,14 +358,14 @@ bb
 
 Match string, insert, and use `d` to delete the matched line.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '/22/{
 r foo
 d
 }' bar
 ```
 
-```txt {frame="none"}
+```txt {title="Output"}
 11
 aa
 bb
@@ -327,13 +373,13 @@ bb
 
 The following will report a syntax error.
 
-```bash {frame="none"}
+```bash {copyable}
 # Will error
 sed '/22/{r foo; d}' bar
 ```
 
 It's not impossible to do it in one line.
 
-```bash {frame="none"}
+```bash {copyable}
 sed '/22/r foo' bar | sed '/22/d'
 ```

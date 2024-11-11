@@ -2,13 +2,13 @@
 
 Determine file type.
 
-```bash
+```bash {copyable}
 file /bin
 ```
 
 /bin: symbolic link to /usr/bin.
 
-```bash
+```bash {copyable}
 file /bin/
 ```
 

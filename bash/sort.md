@@ -2,7 +2,7 @@
 
 Sort lines of text files.
 
-```bash
+```bash {copyable}
 sort
 ```
 
@@ -10,7 +10,7 @@ sort
 
 ## Reverse Order
 
-```bash
+```bash {copyable}
 sort -r file
 ```
 
@@ -18,7 +18,7 @@ sort -r file
 
 ## Numeric Sort
 
-```bash
+```bash {copyable}
 sort -n file
 ```
 
@@ -28,7 +28,7 @@ sort -n file
 
 Month format: `Jan`, `Feb`, `Mar`.
 
-```bash
+```bash {copyable}
 sort -M file
 ```
 
@@ -38,7 +38,7 @@ sort -M file
 
 Default is separated by (consecutive) spaces or tabs.
 
-```bash
+```bash {copyable}
 sort -k 1 file
 ```
 
@@ -49,7 +49,7 @@ sort -k 1 file
 - `-k` index starts from 1.
 - The 3rd column is the user ID.
 
-```bash
+```bash {copyable}
 sort -t ':' -k 3 -n /etc/passwd
 ```
 
@@ -57,7 +57,7 @@ sort -t ':' -k 3 -n /etc/passwd
 
 ## Ignore Case
 
-```bash
+```bash {copyable}
 sort -f file
 ```
 
@@ -65,6 +65,6 @@ sort -f file
 
 ## Remove Duplicates
 
-```bash
+```bash {copyable}
 sort -u file
 ```

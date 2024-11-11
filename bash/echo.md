@@ -2,7 +2,7 @@
 
 Display a line of text.
 
-```bash
+```bash {copyable}
 echo "hello"
 ```
 
@@ -12,6 +12,6 @@ echo "hello"
 
 Include env/shell variables.
 
-```bash
+```bash {copyable}
 echo $HOME
 ```

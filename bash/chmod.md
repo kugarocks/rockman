@@ -6,24 +6,24 @@ Change file mode bits.
 
 `u` represents user: adds execution permission for the user.
 
-```bash
+```bash {copyable}
 chmod u+x file
 ```
 
 `g` represents group: removes write permission for the group.
 
-```bash
+```bash {copyable}
 chmod g-w file
 ```
 
 `o` represents others: adds read permission for others.
 
-```bash
+```bash {copyable}
 chmod g+r file
 ```
 
 `a` represents all: adds execution permission for all.
 
-```bash
+```bash {copyable}
 chmod a+x file
 ```

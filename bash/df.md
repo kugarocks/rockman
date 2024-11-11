@@ -2,7 +2,7 @@
 
 Report file system disk space usage.
 
-```bash
+```bash {copyable}
 df
 ```
 
@@ -10,7 +10,7 @@ df
 
 ## Readable Format
 
-```bash
+```bash {copyable}
 df -h
 ```
 
@@ -18,7 +18,7 @@ df -h
 
 ## Free Inodes Statistic
 
-```bash
+```bash {copyable}
 df -ih
 ```
 
@@ -28,12 +28,12 @@ df -ih
 
 `ext4` is the file system type of Linux.
 
-```bash
+```bash {copyable}
 df -h -t ext4
 ```
 
 `apfs` is the file system type of macOS.
 
-```bash
+```bash {copyable}
 df -h -t apfs
 ```

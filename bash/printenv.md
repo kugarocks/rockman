@@ -2,7 +2,7 @@
 
 Print out the environment variables.
 
-```bash
+```bash {copyable}
 printenv
 ```
 
@@ -10,6 +10,6 @@ printenv
 
 ## Specify Variable
 
-```bash
+```bash {copyable}
 printenv HOME
 ```

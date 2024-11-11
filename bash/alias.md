@@ -2,6 +2,6 @@
 
 Print all aliases.
 
-```bash
+```bash {copyable}
 alias
 ```
