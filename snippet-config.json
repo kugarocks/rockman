@@ -1,6 +1,20 @@
 {
   "snippet_list": [
     {
+      "folder": "cloud-native",
+      "date": "2024-11-20T23:31:42.654207+08:00",
+      "title": "k8s",
+      "file": "k8s.md",
+      "language": "md"
+    },
+    {
+      "folder": "cloud-native",
+      "date": "2024-11-21T13:48:44.620315+08:00",
+      "title": "docker",
+      "file": "docker.md",
+      "language": "md"
+    },
+    {
       "folder": "bash",
       "date": "2024-11-03T17:43:26.448141+08:00",
       "title": "cat",
@@ -12,6 +26,188 @@
       "date": "2024-11-03T17:43:26.448141+08:00",
       "title": "ls",
       "file": "ls.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654042+08:00",
+      "title": "alias",
+      "file": "alias.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654046+08:00",
+      "title": "chmod",
+      "file": "chmod.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654047+08:00",
+      "title": "chown",
+      "file": "chown.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.65405+08:00",
+      "title": "df",
+      "file": "df.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654052+08:00",
+      "title": "du",
+      "file": "du.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654054+08:00",
+      "title": "echo",
+      "file": "echo.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654056+08:00",
+      "title": "env",
+      "file": "env.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654059+08:00",
+      "title": "file",
+      "file": "file.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654062+08:00",
+      "title": "grep",
+      "file": "grep.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654064+08:00",
+      "title": "group",
+      "file": "group.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654067+08:00",
+      "title": "kill",
+      "file": "kill.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654071+08:00",
+      "title": "passwd",
+      "file": "passwd.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654074+08:00",
+      "title": "pgrep",
+      "file": "pgrep.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654078+08:00",
+      "title": "pkill",
+      "file": "pkill.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654082+08:00",
+      "title": "printenv",
+      "file": "printenv.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654086+08:00",
+      "title": "ps",
+      "file": "ps.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654091+08:00",
+      "title": "readlink",
+      "file": "readlink.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654095+08:00",
+      "title": "sed",
+      "file": "sed.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.6541+08:00",
+      "title": "sort",
+      "file": "sort.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654104+08:00",
+      "title": "type",
+      "file": "type.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.65411+08:00",
+      "title": "useradd",
+      "file": "useradd.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654115+08:00",
+      "title": "userdel",
+      "file": "userdel.md",
+      "language": "md"
+    },
+    {
+      "folder": "bash",
+      "date": "2024-11-20T23:31:42.654122+08:00",
+      "title": "usermod",
+      "file": "usermod.md",
+      "language": "md"
+    },
+    {
+      "folder": "db",
+      "date": "2024-11-21T09:59:16.321743+08:00",
+      "title": "clickhouse",
+      "file": "clickhouse.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-11-21T09:59:16.321777+08:00",
+      "title": "ssh",
+      "file": "ssh.md",
+      "language": "md"
+    },
+    {
+      "folder": "db",
+      "date": "2024-11-21T21:44:40.296136+08:00",
+      "title": "kafka",
+      "file": "kafka.md",
       "language": "md"
     }
   ]
