@@ -95,3 +95,11 @@ iTerm2 Plugin Aliases
 ```bash {copyable}
 dipu foo:1.0.0
 ``` 
+
+---
+
+## Docker Build
+
+```bash {copyable}
+docker build -t foo:1.0.0 .
+```

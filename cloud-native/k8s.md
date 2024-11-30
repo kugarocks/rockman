@@ -60,4 +60,18 @@ kubectl delete pvc foo
 kubectl get pvc | grep 'foo' | awk '{print $1}' | xargs kubectl delete pvc
 ```
 
-clickhouse://default:oscrocks@clickhouse.journal.svc.cluster.local:9000/journal?dial_timeout=200ms&max_execution_time=60
+---
+
+## Scale Resources
+
+Deployment
+
+```bash {copyable}
+kubectl scale deploy foo --replicas=1
+```
+
+StatefulSet
+
+```bash {copyable}
+kubectl scale sts foo --replicas=1
+```

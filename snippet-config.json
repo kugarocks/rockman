@@ -1,6 +1,34 @@
 {
   "snippet_list": [
     {
+      "folder": "terminal",
+      "date": "2024-11-28T16:17:26.722883+08:00",
+      "title": "tmux",
+      "file": "tmux.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-11-21T09:59:16.321777+08:00",
+      "title": "ssh",
+      "file": "ssh.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-11-25T18:23:51.554491+08:00",
+      "title": "clickvisual",
+      "file": "clickvisual.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-11-26T17:33:11.49983+08:00",
+      "title": "osc",
+      "file": "osc.md",
+      "language": "md"
+    },
+    {
       "folder": "cloud-native",
       "date": "2024-11-20T23:31:42.654207+08:00",
       "title": "k8s",
@@ -12,6 +40,13 @@
       "date": "2024-11-21T13:48:44.620315+08:00",
       "title": "docker",
       "file": "docker.md",
+      "language": "md"
+    },
+    {
+      "folder": "cloud-native",
+      "date": "2024-11-22T09:22:42.104259+08:00",
+      "title": "kalias",
+      "file": "kalias.md",
       "language": "md"
     },
     {
@@ -194,13 +229,6 @@
       "date": "2024-11-21T09:59:16.321743+08:00",
       "title": "clickhouse",
       "file": "clickhouse.md",
-      "language": "md"
-    },
-    {
-      "folder": "local",
-      "date": "2024-11-21T09:59:16.321777+08:00",
-      "title": "ssh",
-      "file": "ssh.md",
       "language": "md"
     },
     {
