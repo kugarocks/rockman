@@ -1,31 +1,52 @@
 {
   "snippet_list": [
     {
-      "folder": "terminal",
-      "date": "2024-11-28T16:17:26.722883+08:00",
-      "title": "tmux",
-      "file": "tmux.md",
+      "folder": "macos",
+      "date": "2024-12-02T18:22:16.860126+08:00",
+      "title": "homebrew",
+      "file": "homebrew.md",
+      "language": "md"
+    },
+    {
+      "folder": "db",
+      "date": "2024-11-21T09:59:16.321743+08:00",
+      "title": "clickhouse",
+      "file": "clickhouse.md",
+      "language": "md"
+    },
+    {
+      "folder": "db",
+      "date": "2024-11-21T21:44:40.296136+08:00",
+      "title": "kafka",
+      "file": "kafka.md",
       "language": "md"
     },
     {
       "folder": "local",
-      "date": "2024-11-21T09:59:16.321777+08:00",
+      "date": "2024-12-02T10:32:21.054799+08:00",
       "title": "ssh",
       "file": "ssh.md",
       "language": "md"
     },
     {
       "folder": "local",
-      "date": "2024-11-25T18:23:51.554491+08:00",
-      "title": "clickvisual",
-      "file": "clickvisual.md",
+      "date": "2024-12-02T15:58:20.279059+08:00",
+      "title": "osc",
+      "file": "osc.md",
       "language": "md"
     },
     {
       "folder": "local",
-      "date": "2024-11-26T17:33:11.49983+08:00",
-      "title": "osc",
-      "file": "osc.md",
+      "date": "2024-12-02T18:44:03.83058+08:00",
+      "title": "gitee-ingressgw",
+      "file": "gitee-ingressgw.md",
+      "language": "md"
+    },
+    {
+      "folder": "terminal",
+      "date": "2024-11-28T16:17:26.722883+08:00",
+      "title": "tmux",
+      "file": "tmux.md",
       "language": "md"
     },
     {
@@ -222,20 +243,6 @@
       "date": "2024-11-20T23:31:42.654122+08:00",
       "title": "usermod",
       "file": "usermod.md",
-      "language": "md"
-    },
-    {
-      "folder": "db",
-      "date": "2024-11-21T09:59:16.321743+08:00",
-      "title": "clickhouse",
-      "file": "clickhouse.md",
-      "language": "md"
-    },
-    {
-      "folder": "db",
-      "date": "2024-11-21T21:44:40.296136+08:00",
-      "title": "kafka",
-      "file": "kafka.md",
       "language": "md"
     }
   ]
