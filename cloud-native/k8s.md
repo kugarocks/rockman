@@ -75,3 +75,52 @@ StatefulSet
 ```bash {copyable}
 kubectl scale sts foo --replicas=1
 ```
+
+---
+
+## Get Pods Node Info(IP)
+
+```bash {copyable}
+kubectl get pods -o=wide | grep ingressgateway | awk '{print $1, $2, $3, $6, $7}' | while read pod_name ready status pod_ip node_name; do
+    node_info=$(kubectl get nodes -o=wide | awk -v node="$node_name" '$1 == node {print $6}')
+    echo -e "${pod_name}\t${pod_ip}\t${node_name}\t${node_info}\t${status}"
+done
+```
+
+```txt {title="kubectl get pods -o=wide"}
+NAME  READY  STATUS  RESTARTS  AGE  IP  NODE
+foo   1/1    Runn..  0         18d  ..  ..
+```
+
+```txt {title="kubectl get nodes -o=wide"}
+NAME  STATUS  ROLES  AGE  VERSION  INTERNAL-IP  EXTERNAL-IP
+bar   Ready   ...    18d  v1.28.3  10.125.2...  <none>
+```
+
+---
+
+## Cluster Start Time
+
+```bash {copyable}
+kubectl get pods -n kube-system -l component=etcd -o=jsonpath='{.items[0].status.startTime}'; echo
+```
+
+---
+
+## Get Node CIDR
+
+```bash {copyable}
+kubectl get nodes -o custom-columns="NODE:.metadata.name,CIDR:.spec.podCIDR"
+```
+
+---
+
+## Get IPPool
+
+```bash {copyable}
+kubectl get ippool -n kube-system
+``` 
+
+```bash {copyable}
+kubectl describe ippool default-ipv4-ippool -n kube-system
+``` 
