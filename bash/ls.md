@@ -18,6 +18,14 @@ ls -lh
 
 ---
 
+## Only Dotfiles
+
+```bash {copyable}
+ls -ld .*
+```
+
+---
+
 ## Only Directories
 
 ```bash {copyable}
