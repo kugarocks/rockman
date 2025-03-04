@@ -1,6 +1,48 @@
 {
   "snippet_list": [
     {
+      "folder": "obs",
+      "date": "2024-12-03T14:54:58.428018+08:00",
+      "title": "prometheus",
+      "file": "prometheus.md",
+      "language": "md"
+    },
+    {
+      "folder": "db",
+      "date": "2024-11-21T09:59:16.321743+08:00",
+      "title": "clickhouse",
+      "file": "clickhouse.md",
+      "language": "md"
+    },
+    {
+      "folder": "db",
+      "date": "2024-11-21T21:44:40.296136+08:00",
+      "title": "kafka",
+      "file": "kafka.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-12-02T10:32:21.054799+08:00",
+      "title": "ssh",
+      "file": "ssh.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-12-02T15:58:20.279059+08:00",
+      "title": "osc",
+      "file": "osc.md",
+      "language": "md"
+    },
+    {
+      "folder": "local",
+      "date": "2024-12-02T18:44:03.83058+08:00",
+      "title": "gitee-ingressgw",
+      "file": "gitee-ingressgw.md",
+      "language": "md"
+    },
+    {
       "folder": "terminal",
       "date": "2024-11-28T16:17:26.722883+08:00",
       "title": "tmux",
@@ -33,6 +75,13 @@
       "date": "2024-12-09T16:09:26.732545+08:00",
       "title": "helm",
       "file": "helm.md",
+      "language": "md"
+    },
+    {
+      "folder": "cloud-native",
+      "date": "2025-01-20T11:31:51.973591+08:00",
+      "title": "openresty",
+      "file": "openresty.md",
       "language": "md"
     },
     {
@@ -211,52 +260,17 @@
       "language": "md"
     },
     {
+      "folder": "bash",
+      "date": "2024-12-20T11:00:03.932249+08:00",
+      "title": "curl",
+      "file": "curl.md",
+      "language": "md"
+    },
+    {
       "folder": "macos",
       "date": "2024-12-02T18:22:16.860126+08:00",
       "title": "homebrew",
       "file": "homebrew.md",
-      "language": "md"
-    },
-    {
-      "folder": "obs",
-      "date": "2024-12-03T14:54:58.428018+08:00",
-      "title": "prometheus",
-      "file": "prometheus.md",
-      "language": "md"
-    },
-    {
-      "folder": "db",
-      "date": "2024-11-21T09:59:16.321743+08:00",
-      "title": "clickhouse",
-      "file": "clickhouse.md",
-      "language": "md"
-    },
-    {
-      "folder": "db",
-      "date": "2024-11-21T21:44:40.296136+08:00",
-      "title": "kafka",
-      "file": "kafka.md",
-      "language": "md"
-    },
-    {
-      "folder": "local",
-      "date": "2024-12-02T10:32:21.054799+08:00",
-      "title": "ssh",
-      "file": "ssh.md",
-      "language": "md"
-    },
-    {
-      "folder": "local",
-      "date": "2024-12-02T15:58:20.279059+08:00",
-      "title": "osc",
-      "file": "osc.md",
-      "language": "md"
-    },
-    {
-      "folder": "local",
-      "date": "2024-12-02T18:44:03.83058+08:00",
-      "title": "gitee-ingressgw",
-      "file": "gitee-ingressgw.md",
       "language": "md"
     }
   ]

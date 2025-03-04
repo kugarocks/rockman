@@ -124,3 +124,36 @@ kubectl get ippool -n kube-system
 ```bash {copyable}
 kubectl describe ippool default-ipv4-ippool -n kube-system
 ``` 
+
+---
+
+## Get Node Labels
+
+```bash {copyable}
+kubectl get nodes foo --show-labels
+``` 
+
+---
+
+## Get Nodes Traints
+
+```bash {copyable}
+kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
+``` 
+
+---
+
+## Backup Virtual Service
+
+```bash {copyable}
+kubectl -n gitee get vs -o yaml > gitee-vs-backup-$(date +%Y%m%d).yaml
+``` 
+
+---
+
+## Delete All Virtual Service
+
+```bash {copyable}
+kubectl -n gitee delete vs --all
+``` 
+
