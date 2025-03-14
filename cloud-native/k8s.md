@@ -157,3 +157,18 @@ kubectl -n gitee get vs -o yaml > gitee-vs-backup-$(date +%Y%m%d).yaml
 kubectl -n gitee delete vs --all
 ``` 
 
+---
+
+## Get Pod Raw Metrics
+
+```bash {copyable}
+kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/foo/pods/bar
+``` 
+
+---
+
+## Delete Pod Force
+
+```bash {copyable}
+kubectl delete pod --grace-period=0 --force foo
+``` 

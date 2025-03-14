@@ -12,6 +12,16 @@ Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+---
+
+## Unlink
+
+```bash {copyable}
+brew unlink go
+```
+
+---
+
 ## Link Overwrite
 
 Go version
