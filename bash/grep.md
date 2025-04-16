@@ -42,10 +42,24 @@ grep -F foo file
 
 ---
 
-## Recursive Dir Search
+## Recursive Search
+
+Output: filename & content
 
 ```bash {copyable}
 grep -r foo /path
+```
+
+Output: filename & content with context lines
+
+```bash {copyable}
+grep -rC 3 foo /path
+```
+
+Output: filename
+
+```bash {copyable}
+grep -rl foo /path
 ```
 
 ---

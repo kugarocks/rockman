@@ -172,3 +172,20 @@ kubectl get --raw /apis/metrics.k8s.io/v1beta1/namespaces/foo/pods/bar
 ```bash {copyable}
 kubectl delete pod --grace-period=0 --force foo
 ``` 
+
+---
+
+## Get Multi Pods Logs
+
+Label
+
+```bash {copyable}
+kubectl -n istio-system logs -l app=istio-ingressgateway --tail=5
+``` 
+
+xargs
+
+```bash {copyable}
+kubectl -n istio-system get po | grep istio-ingress | awk '{print $1}' | xargs -I{} kubectl -n istio-system logs {} --tail=5
+``` 
+

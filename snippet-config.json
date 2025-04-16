@@ -1,13 +1,6 @@
 {
   "snippet_list": [
     {
-      "folder": "obs",
-      "date": "2024-12-03T14:54:58.428018+08:00",
-      "title": "prometheus",
-      "file": "prometheus.md",
-      "language": "md"
-    },
-    {
       "folder": "db",
       "date": "2024-11-21T09:59:16.321743+08:00",
       "title": "clickhouse",
@@ -271,6 +264,13 @@
       "date": "2024-12-02T18:22:16.860126+08:00",
       "title": "homebrew",
       "file": "homebrew.md",
+      "language": "md"
+    },
+    {
+      "folder": "obs",
+      "date": "2024-12-03T14:54:58.428018+08:00",
+      "title": "prometheus",
+      "file": "prometheus.md",
       "language": "md"
     }
   ]
