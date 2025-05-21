@@ -189,3 +189,25 @@ xargs
 kubectl -n istio-system get po | grep istio-ingress | awk '{print $1}' | xargs -I{} kubectl -n istio-system logs {} --tail=5
 ``` 
 
+---
+
+## Get All Gateway Host
+
+```bash {copyable}
+kubectl get gw -o yaml | awk '
+  /hosts:/ {host_section=1; next}
+  host_section && /^[ ]*- / {
+    gsub(/^[ ]*- /, "", $0)
+    hosts[$0]=1
+  }
+  /port:/ {host_section=0}
+  END {
+    for (host in hosts) {
+      if (host != "") {
+        print host
+      }
+    }
+  }
+'
+```
+
